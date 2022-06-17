@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 export const Title = ({greeting}) =>{
     //console.log(props);
     return(

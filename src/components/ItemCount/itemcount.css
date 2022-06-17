@@ -1,0 +1,20 @@
+.counter{
+    width: fit-content;
+    background-color: aquamarine;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+.counter h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.counter button{
+    margin-left: 30px;
+    margin-right: 30px;
+   margin-bottom: 30px;
+}
+.btn-carrito{
+    background-color: rgb(92, 118, 245);
+    font-family: 'Times New Roman', Times, serif;
+}

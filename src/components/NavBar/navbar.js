@@ -1,11 +1,11 @@
-import { Fragment } from "react"
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {NavDropdown} from 'react-bootstrap';
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsBicycle } from "react-icons/bs";
-import {CartWidget} from '../CartWidget';
+import {CartWidget} from '../CartWidget/cartwidget';
 import React from "react";
 const NavBarExample = () =>{
     return(
@@ -17,8 +17,8 @@ const NavBarExample = () =>{
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="../partes">Partes</Nav.Link>
-            <Nav.Link as={Link} to="../motos">Motos</Nav.Link>
+            <Nav.Link >Partes</Nav.Link>
+            <Nav.Link >Motos</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item >Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -32,9 +32,7 @@ const NavBarExample = () =>{
       </Container>
     </Navbar>
 
-    <section>
-      <Outlet></Outlet>
-    </section>
+    
 
       
 
@@ -42,4 +40,4 @@ const NavBarExample = () =>{
         </>
     )
 }
-export default NavBarExample
+export default NavBarExample;
